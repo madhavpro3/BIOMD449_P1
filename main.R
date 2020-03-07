@@ -1,11 +1,7 @@
-setwd("/home/maddy/programs/blog post model")
-
-# source("sims.R")
 source("jacobian.R")
 library(igraph)
 library(network)
 
-# jac<-getJacobian(steadystates[-1,2])
 jac<-getJacobian(rep(1,27))
 adjacencymatrix<-t(jac!=0)
 
